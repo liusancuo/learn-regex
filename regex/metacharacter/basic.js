@@ -39,5 +39,12 @@ const pipe = {
 
 module.exports = {
   label: 'basic',
-  list: [dot, set, hyphen, negatedSet, escaped, pipe]
+  characters: {
+    dot,
+    set,
+    hyphen,
+    negatedSet,
+    escaped,
+    pipe
+  }
 };
