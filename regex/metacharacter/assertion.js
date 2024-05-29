@@ -22,12 +22,40 @@ const end = {
   desc_en: 'Matches the end of input.'
 };
 
+const positiveLookahead = {
+  char: '(?=)',
+  desc_zh: '肯定式向前查看',
+  desc_en: 'Positive lookahead assertion.'
+};
+
+const negativeLookahead = {
+  char: '(?!)',
+  desc_zh: '否定式向前查看',
+  desc_en: 'Negative lookahead assertion.'
+};
+
+const positiveLookbehind = {
+  char: '(?<=)',
+  desc_zh: '肯定式向后查看',
+  desc_en: 'Positive lookbehind assertion.'
+};
+
+const negativeLookbehind = {
+  char: '(?<!)',
+  desc_zh: '否定式向后查看',
+  desc_en: 'Negative lookbehind assertion.'
+};
+
 module.exports = {
   label: 'assertion',
   characters: {
     wordBoundary,
     nonWordBoundary,
     beginning,
-    end
+    end,
+    positiveLookahead,
+    negativeLookahead,
+    positiveLookbehind,
+    negativeLookbehind
   }
 };
