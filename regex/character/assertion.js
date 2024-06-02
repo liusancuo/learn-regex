@@ -1,6 +1,7 @@
 const {
   supportedInJS: canUse,
-  ESVersion: version
+  ESVersion: version,
+  label
 } = require('../common/constants');
 
 const wordBoundary = {
@@ -68,7 +69,7 @@ const negativeLookbehind = {
 };
 
 module.exports = {
-  label: 'assertion',
+  label: label.ASSERTION,
   characters: {
     wordBoundary,
     nonWordBoundary,

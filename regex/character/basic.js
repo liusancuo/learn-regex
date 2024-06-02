@@ -1,6 +1,7 @@
 const {
   supportedInJS: canUse,
-  ESVersion: version
+  ESVersion: version,
+  label
 } = require('../common/constants');
 
 const dot = {
@@ -55,7 +56,7 @@ const pipe = {
 };
 
 module.exports = {
-  label: 'basic',
+  label: label.BASIC,
   characters: {
     dot,
     set,

@@ -1,6 +1,7 @@
 const {
   supportedInJS: canUse,
-  ESVersion: version
+  ESVersion: version,
+  label
 } = require('../common/constants');
 
 const indices = {
@@ -74,7 +75,7 @@ const sticky = {
 };
 
 module.exports = {
-  label: 'flags',
+  label: label.FLAGS,
   characters: {
     indices,
     global,

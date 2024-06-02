@@ -1,6 +1,7 @@
 const {
   supportedInJS: canUse,
-  ESVersion: version
+  ESVersion: version,
+  label
 } = require('../common/constants');
 
 const capturingGroup = {
@@ -40,7 +41,7 @@ const namedBackReference = {
 };
 
 module.exports = {
-  label: 'group',
+  label: label.GROUP,
   characters: {
     capturingGroup,
     namedCapturingGroup,

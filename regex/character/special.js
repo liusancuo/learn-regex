@@ -1,6 +1,7 @@
 const {
   supportedInJS: canUse,
-  ESVersion: version
+  ESVersion: version,
+  label
 } = require('../common/constants');
 
 const backspace = {
@@ -119,7 +120,7 @@ const octal = {
 };
 
 module.exports = {
-  label: 'special',
+  label: label.SPECIAL,
   characters: {
     backspace,
     formfeed,

@@ -13,7 +13,17 @@ const ESVersion = {
   ES15: 'ES15'
 };
 
+const label = {
+  BASIC: 'basic',
+  ASSERTION: 'assertion',
+  GROUP: 'group',
+  FLAGS: 'flags',
+  QUANTIFIER: 'quantifier',
+  SPECIAL: 'special'
+};
+
 module.exports = {
   supportedInJS,
-  ESVersion
+  ESVersion,
+  label
 };

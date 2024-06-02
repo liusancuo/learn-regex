@@ -1,6 +1,7 @@
 const {
   supportedInJS: canUse,
-  ESVersion: version
+  ESVersion: version,
+  label
 } = require('../common/constants');
 
 const oneOrMore = {
@@ -82,7 +83,7 @@ const atLeastTimesNonGreedy = {
 };
 
 module.exports = {
-  label: 'quantifier',
+  label: label.QUANTIFIER,
   characters: {
     oneOrMore,
     zeroOrMore,
