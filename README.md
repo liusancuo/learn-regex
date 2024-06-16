@@ -1,4 +1,4 @@
-# Learn Regular Expression in JavaScript
+# JavaScript Regular Expression
 
 为辅助JavaScript programmers快速学习和使用正则表达而编写的指南。
 
